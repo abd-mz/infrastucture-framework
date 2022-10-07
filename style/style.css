@@ -1,0 +1,12 @@
+body {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+  font-weight: bold;
+}
+
+#label_email{
+    color: red;
+}

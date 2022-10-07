@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TP1 : HTML, CSS et JavaScript</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="script/script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="myform">
+      <ul>
+        <li><a href="#paragraphe">Menu local</a></li>
+        <li>
+          <a href="https://passeport.dauphine.fr/">Passeport dauphine </a>
+        </li>
+      </ul>
+      <table border="1">
+        <thead>
+          <tr>
+            <th colspan="3">
+              <img src="./ressources/Dauphine_logo_2019_-_Bleu.png" />
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div id="infos">
+                <label
+                  >Name :
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    maxlength="10"
+                    value="Nom"
+                /></label>
+                <label
+                  >Middle :
+                  <input
+                    type="text"
+                    id="middle_name"
+                    name="middle_name"
+                    maxlength="10"
+                    placeholder="Middle"
+                /></label>
+                <label
+                  >Last Name :
+                  <input
+                    type="text"
+                    id="last_name"
+                    name="last_name"
+                    maxlength="10"
+                    placeholder="Last Name"
+                /></label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div id="gender">
+                <label>M<input type="radio" name="male" id="male" /></label>
+                <label>F<input type="radio" name="female" id="female" /></label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div id="contact_info">
+                <label
+                  >Phone<input
+                    type="text"
+                    name="phone"
+                    id="phone"
+                    maxlength="10"
+                    placeholder="0123456789"
+                /></label>
+                <label id="label_email"
+                  >Email<input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="email@address.com"
+                /></label>
+                    <label
+                      >Contact<input type="checkbox" name="contact" id="contact"
+                    /></label>
+                    </td>
+                  </tr>
+              </div>
+        </tbody>
+      </table>
+      <div id="button">
+        <input
+          type="submit"
+          name="soumission"
+          id="soumission"
+          value="Soumettre"
+        />
+        <input
+          type="button"
+          name="reset"
+          id="reset"
+          value="Remettre à zéro"
+        />
+        <input
+          type="button"
+          name="calljs"
+          id="calljs"
+          value="Appel javascript change idname"
+          onclick="update()"
+        />
+      </div>
+      <div id="paragraphe">
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+      </div>
+    </form>
+  </body>
+</html>
